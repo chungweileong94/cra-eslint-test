@@ -1,0 +1,85 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "react-app",
+    "airbnb"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "react",
+    "react-hooks"
+  ],
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "@",
+            "./src"
+          ]
+        ]
+      }
+    }
+  },
+  "rules": {
+    "react/jsx-indent": "off",
+    "react/jsx-filename-extension": "off",
+    "react/forbid-prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "import/prefer-default-export": "off",
+    "import/newline-after-import": [
+      "warn",
+      {
+        "count": 2
+      }
+    ],
+    "import/order": [
+      "warn",
+      {
+        "groups": [
+          "builtin",
+          "external",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "pathGroups": [
+          {
+            "pattern": "@/**",
+            "group": "parent"
+          }
+        ],
+        "newlines-between": "always"
+      }
+    ],
+    "indent": "off",
+    "no-nested-ternary": "off",
+    "no-restricted-syntax": "off",
+    "no-await-in-loop": "off",
+    "object-curly-newline": "off",
+    "object-curly-spacing": "off",
+    "no-unused-expressions": "off",
+    "radix": "off",
+    "no-plusplus": "off",
+    "max-len": "off",
+    "func-names": "off",
+    "arrow-parens": [
+      "warn",
+      "as-needed"
+    ]
+  }
+}
